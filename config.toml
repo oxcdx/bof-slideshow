@@ -1,5 +1,6 @@
 baseURL = '/'
-languageCode = 'en-us'
+languageCode = 'en-gb'
+languageDirection = 'ltr'  # Add this line
 title = 'Compiler - Beneath Our Footsteps Slideshow'
 theme = "ox-minimal"
 
