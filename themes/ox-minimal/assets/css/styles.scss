@@ -1,11 +1,14 @@
-html, body {
+html, body, main {
   height: 100%;
 }
 
 body {
   font-family: sans-serif;
   line-height: 1;
-  margin: 0
+  margin: 0;
+}
+body.bg-dark {
+  background-color: #03c !important;
 }
 
 header {
@@ -22,3 +25,21 @@ a {
   // color: #00e;
   text-decoration: none;
 }
+
+.full-page-image img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  object-fit: contain;
+}
+.nav {
+  background-color: #03c;
+}
+.nav-link.active, .nav-link:hover, .nav-link:focus {
+  color: #FFCC33;
+}
+
+.nav-link {
+  color: #fff;
+}
+

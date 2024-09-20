@@ -3,6 +3,10 @@ languageCode = 'en-gb'
 languageDirection = 'ltr'  # Add this line
 title = 'Compiler - Beneath Our Footsteps Slideshow'
 theme = "ox-minimal"
+enableGitInfo = true
+
+# Add this line to enable future content
+buildFuture = true
 
 [module]
   [[module.mounts]]

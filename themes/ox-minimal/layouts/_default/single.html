@@ -1,10 +1,22 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <h1 class="visually-hidden">{{ .Title }}</h1>
+  {{/*  get the featured image  */}}
+  <div class="full-page-image h-100">
+    {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="img-fluid">
+    {{ end }}
+  </div>
+  <div class="fixed-bottom d-flex justify-content-end pb-3 pe-3">
+    {{/* Get the sound file */}}
+    {{ with .Params.sound }}
+      <div class="audio-player">
+        <audio controls>
+          <source src="{{ . }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    {{ end }}
+  </div>
+  
+  {{/*  {{ .Content }}  */}}
 {{ end }}
