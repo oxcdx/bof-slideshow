@@ -1,0 +1,9 @@
+baseURL = '/'
+languageCode = 'en-gb'
+title = 'Compiler - Beneath Our Footsteps Slideshow'
+theme = "ox-minimal"
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
