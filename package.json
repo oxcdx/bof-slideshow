@@ -1,0 +1,15 @@
+{
+  "name": "hugo-website",
+  "version": "1.0.0",
+  "description": "test website for Hugo and Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "dev": "hugo server -D -p 1313",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
