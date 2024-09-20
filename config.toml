@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://beneath-our-footsteps-presentation.netlify.app/'
 languageCode = 'en-gb'
 languageDirection = 'ltr'  # Add this line
 title = 'Compiler - Beneath Our Footsteps Slideshow'

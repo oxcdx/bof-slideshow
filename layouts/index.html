@@ -1,7 +1,15 @@
 {{ define "main" }}
 
 <div class="container">
-<h2 class="display-4 text-center">Main body goes here</h2>
+  <ul>
+    {{ range (where .Pages "Section" "blog") }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
 </div>
 
 {{ end }}
