@@ -9,7 +9,7 @@ collections:
     folder: 'content/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    frontmatter_format: "toml"  # Add this line to set the frontmatter format to TOML
+    format: 'toml-frontmatter'
     editor:
       preview: false
     fields:
