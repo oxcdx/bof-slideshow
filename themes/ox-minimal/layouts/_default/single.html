@@ -10,18 +10,12 @@
     {{/* Get the sound file */}}
     {{ with .Params.sound }}
       <div class="audio-player w-100">
-        <audio controls autoplay>
+        <audio class="w-100" controls autoplay>
           <source src="{{ . }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
     {{ end }}
-    <div class="audio-player w-100">
-      <audio class="w-100" controls autoplay>
-        <source src="{{ . }}" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
   </div>
   
   {{/*  {{ .Content }}  */}}
